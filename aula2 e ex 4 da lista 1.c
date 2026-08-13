@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 	scanf("%f", &base_menor);
 	printf("\nInsira a altura(h):");
 	scanf("%f", &altura);
-	area+((base_maior + base_menor)*altura /2);
+	area=((base_maior + base_menor)*altura /2);
 	printf("\nA area do trapezio e: %.2f\n", area);
 	
 	
