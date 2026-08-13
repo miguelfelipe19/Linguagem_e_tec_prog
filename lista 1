@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define pi 3.141592
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {	
+	//exercicio 1
+	int primeiro, segundo;
+	printf("\nInsira o primeiro valor:");
+	scanf("%d", &primeiro);
+	printf("\nInsira o segundo valor:");
+	scanf("%d", &segundo);
+	printf("%d \n %d",segundo, primeiro);
+
+	//exercicio 2
+	double valor;
+	printf("\nInsira um valor double:");
+	scanf("%lf", &valor);
+	printf("Digite um numero em notacao cientifica(minuscula): %e\n",valor);
+	printf("Digite um numero em notacao cientifica(maiuscula): %E\n",valor);
+	
+	//exercicio 5
+	float primeiro_valor, segundo_valor, terceiro_valor, quarto_valor, soma , media, podutorio;
+	printf("\nDigite o primeiro valor(1/4):");
+	scanf("%f", &primeiro_valor);
+	printf("\nDigite o segundo valor(2/4):");
+	scanf("%f", &segundo_valor);
+	printf("\nDigite o terceiro valor(3/4):");
+	scanf("%f", &terceiro_valor);
+	printf("\nDigite o quarto valor(4/4):");
+	scanf("%f", &quarto_valor);
+	soma= (primeiro_valor + segundo_valor + terceiro_valor + quarto_valor);
+	printf("\nA soma dos valores e: %.2f",soma );
+	
+	
+	
+	
+	
+	
+
+	
+	
+	return 0;
+}
