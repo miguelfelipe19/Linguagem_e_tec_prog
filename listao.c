@@ -60,5 +60,57 @@ int main(int argc, char *argv[]) {
 
     printf("\nSegundo digito calculado: %d", restoII);
 
+/* calc insse */
+    float calc_inss(float salario){
+	if (salario <= 1412.00)return salario * 0.075;
+	else if(salario<=2666.68) return salario * 0.09;
+	else if(salario<= 4000.00) return salario * 0.12;
+	else return salario * 0.14;
+		
+		
+	}
+
+
+
+int main(int argc, char *argv[]) {
+	float salario;
+	float desconto;
+	scanf ("%f", &salario);
+	desconto = calc_inss(salario);
+	printf("%f || %f", desconto, calc_inss(salario));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     return 0;
 }
