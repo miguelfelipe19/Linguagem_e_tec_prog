@@ -26,4 +26,4 @@ int main(int argc, char *argv[]) {
 }
 
 
-//tarefa pra casa ver os 5 > e os 5 < 
+//tarefa pra casa mostrar o menor e maior nesse cgd 
