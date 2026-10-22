@@ -1,39 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /* palindromo */
 
+
 int main(int argc, char *argv[]) {
-    int i, tamanho;
-    int ehPalindromo = 1;
-    char palavra[30];
-
-    printf("Digite uma palavra: ");
-    scanf("%29s", palavra);   
-    printf("Inseridos %s", palavra);
-    printf("\n");
-
-    
-    for (i = 0; i < 30 && palavra[i] != '\0'; i++) {
-        printf("%d", i);
-    }
-    tamanho = i;  
-    printf("\n o tamanho da minha palavra eh %d\n", tamanho);
-
-   
-    for (i = 0; i < tamanho / 2; i++) {
-        if (palavra[i] != palavra[tamanho - 1 - i]) {
-            ehPalindromo = 0;
-            break;
-        }
-    }
-
-    if (ehPalindromo) {
-        printf("A palavra \"%s\" eh um palindromo\n", palavra);
-    } else {
-        printf("A palavra \"%s\" NAO eh um palindromo\n", palavra);
-    }
-
-    return 0;
+ int i,j,tam,palindromo=1;
+ char palavra[30];
+ scanf("%s",palavra);
+ printf("Inseridos %s",palavra);
+ printf("\n");
+ for( i=0 ; i<30 && palavra[i]!= '\0';i++);
+ tam=i;
+ for(j=i-1, i=0; i<j; i++,j--){
+ 	if(palavra[i] == palavra[j]) palindromo = 1;
+	 else{
+	 	palindromo =0;
+	 	break;
+	 }  
+ 	
+	 
+ }
+ 	
+ if(palindromo==1) printf("\n E palindromo");
+ else printf("\n Nao e palindromo");
+ 
+ printf("\n o tamanho da minha palavra é %d", tam);
+	
+	return 0;
 }
