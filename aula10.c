@@ -23,6 +23,10 @@ int main(int argc, char *argv[]) {
 	i++;}
 }
 	printf("A soma de todos os numeros e: %d", valor);
+	while (i<10){
+		printf("%d", n % 2);
+		n = n / 2
+			    }
 	
 	media = valor / 10;
 	
