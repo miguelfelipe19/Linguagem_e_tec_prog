@@ -6,7 +6,8 @@
 inicial(inicializaçao), até uma determinada condição, realizando uma operação(incremento) a cada execução [sempre]*/
 
 int main(int argc, char *argv[]) {
-/*
+int i,j;
+	/*
 	Laço FOR repete um conjuno de instruções,de um valor 
 inicial(inicializaçao), até uma determinada condição,
  realizando uma operação(incremento) a cada execução [sempre]
