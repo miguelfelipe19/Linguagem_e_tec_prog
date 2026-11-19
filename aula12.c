@@ -7,13 +7,14 @@
  valor em bits  
  */
 
-int main(int argc, char *argv[]) {
-	int n = 10;// 8 + 2 = 10 >> 1010
-	scanf("%d",&n);	
-	while(n > 0){
-		printf("%d", n%2); // 0 1 0 1
-		n = n/2;
-    } 
+int bits[64], k = 0;
+while (n > 0) {
+    bits[k] = n % 2;
+    k++;
+    n = n / 2;
+}
+for (k = k - 1; k >= 0; k--)
+    printf("%d", bits[k]);
 
 	
 	return 0;
